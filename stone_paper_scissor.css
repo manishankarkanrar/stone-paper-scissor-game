@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background-color: #5AE881;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    background: #081b31;
+    color: aliceblue;
+    height: 4rem;
+    line-height: 5rem;
+    padding: 0.5rem;
+}
+
+.choice {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #081b31;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 75px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 4rem;
+}
+
+.score {
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    background-color: #FFE66D;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.msgContainer {
+    margin-top: 4rem;
+}
+
+.msg {
+    background-color: #0d2b4d;
+    color: white;
+    display: inline;
+    padding: 0.6rem;
+    border-radius: 0.7rem;
+    font-size: 1.5rem;
+}
+
+.reset {
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+  background-color: #ff6b6b;
+  color: white;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.reset:hover {
+  background-color: #ff4444;
+}
+
+.footer {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 2px 1px;
+    border-top: 2px solid rgba(255, 215, 0, 0.4);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+}
+
+/* Text styling */
+.footer-text {
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-text span {
+    color: #FFD700;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.footer-text span:hover {
+    text-shadow: 0 0 10px #FFD700;
+}
+
+/* LinkedIn icon */
+.linkedin-link {
+    display: inline-block;
+}
+
+/* Icon styling */
+.linkedin-icon {
+    height: 45px;
+    width: 45px;
+    transition: all 0.4s ease;
+    border-radius: 50%;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Hover effect */
+.linkedin-icon:hover {
+    transform: translateY(-5px) scale(1.15);
+    box-shadow: 0 0 15px rgba(0, 119, 181, 0.8);
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
